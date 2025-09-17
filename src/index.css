@@ -2,39 +2,70 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* AgriTrace Agricultural Supply Chain Platform Design System
+All colors MUST be HSL for proper theming support.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Agricultural themed color palette */
+    --background: 104 50% 96%; /* Light green background #E8F5E8 */
+    --foreground: 120 100% 15%; /* Dark green text */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%; /* Pure white cards */
+    --card-foreground: 120 100% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 120 100% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary: Agricultural green (#2E7D32) */
+    --primary: 123 48% 33%;
+    --primary-foreground: 0 0% 98%;
+    
+    /* Secondary: Trust blue (#1976D2) */
+    --secondary: 210 79% 46%;
+    --secondary-foreground: 0 0% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Success: Verified transactions (#4CAF50) */
+    --success: 122 39% 49%;
+    --success-foreground: 0 0% 98%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Warning: Exploitation alerts (#FF9800) */
+    --warning: 36 100% 50%;
+    --warning-foreground: 0 0% 98%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Error: Fraud detection (#F44336) */
+    --destructive: 4 90% 58%;
+    --destructive-foreground: 0 0% 98%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --muted: 104 30% 94%;
+    --muted-foreground: 120 20% 45%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --accent: 104 40% 92%;
+    --accent-foreground: 123 48% 33%;
+
+    --border: 104 30% 88%;
+    --input: 104 30% 88%;
+    --ring: 123 48% 33%;
+
+    /* Agricultural specific colors */
+    --agri-green: 123 48% 33%;
+    --agri-green-light: 123 48% 85%;
+    --trust-blue: 210 79% 46%;
+    --trust-blue-light: 210 79% 90%;
+    --farmer-credit: 122 39% 49%;
+    --exploitation-alert: 4 90% 58%;
+    --quality-grade: 122 39% 49%;
+    
+    /* Gradients */
+    --gradient-agri: linear-gradient(135deg, hsl(123 48% 33%) 0%, hsl(122 39% 49%) 100%);
+    --gradient-trust: linear-gradient(135deg, hsl(210 79% 46%) 0%, hsl(210 79% 60%) 100%);
+    --gradient-success: linear-gradient(135deg, hsl(122 39% 49%) 0%, hsl(122 39% 65%) 100%);
+    
+    /* Shadows */
+    --shadow-card: 0 2px 8px hsl(123 48% 33% / 0.1);
+    --shadow-elevated: 0 8px 24px hsl(123 48% 33% / 0.15);
+    --shadow-trust: 0 4px 16px hsl(210 79% 46% / 0.2);
 
     --radius: 0.5rem;
 

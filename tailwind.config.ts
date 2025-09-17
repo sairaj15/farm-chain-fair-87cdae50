@@ -27,6 +27,14 @@ export default {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
         },
+        success: {
+          DEFAULT: "hsl(var(--success))",
+          foreground: "hsl(var(--success-foreground))",
+        },
+        warning: {
+          DEFAULT: "hsl(var(--warning))",
+          foreground: "hsl(var(--warning-foreground))",
+        },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
@@ -47,6 +55,14 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // Agricultural specific colors
+        "agri-green": "hsl(var(--agri-green))",
+        "agri-green-light": "hsl(var(--agri-green-light))",
+        "trust-blue": "hsl(var(--trust-blue))",
+        "trust-blue-light": "hsl(var(--trust-blue-light))",
+        "farmer-credit": "hsl(var(--farmer-credit))",
+        "exploitation-alert": "hsl(var(--exploitation-alert))",
+        "quality-grade": "hsl(var(--quality-grade))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -84,6 +100,18 @@ export default {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "pulse-trust": "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+        "bounce-gentle": "bounce 1s infinite",
+      },
+      backgroundImage: {
+        "gradient-agri": "var(--gradient-agri)",
+        "gradient-trust": "var(--gradient-trust)",
+        "gradient-success": "var(--gradient-success)",
+      },
+      boxShadow: {
+        "card": "var(--shadow-card)",
+        "elevated": "var(--shadow-elevated)",
+        "trust": "var(--shadow-trust)",
       },
     },
   },
