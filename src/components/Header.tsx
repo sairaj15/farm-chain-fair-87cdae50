@@ -28,9 +28,9 @@ const Header: React.FC<HeaderProps> = ({ currentRole, onRoleChange }) => {
           {/* Logo */}
           <div className="flex items-center gap-3">
             <img 
-              src="/src/assets/agritrace-logo.png" 
+              src="/src/assets/agritrace-logo-new.png" 
               alt="AgriTrace" 
-              className="h-12 w-auto"
+              className="h-16 w-auto"
             />
             <div className="flex items-center gap-2 text-sm">
               <Shield className="h-4 w-4 text-success" />
