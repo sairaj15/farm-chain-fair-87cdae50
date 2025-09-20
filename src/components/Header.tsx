@@ -25,16 +25,26 @@ const Header: React.FC<HeaderProps> = ({ currentRole, onRoleChange }) => {
     <header className="bg-card border-b border-border shadow-card sticky top-0 z-50">
       <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
-          {/* Logo */}
-          <div className="flex items-center gap-3">
-            <img 
-              src="/src/assets/agritrace-logo-new.png" 
-              alt="AgriTrace" 
-              className="h-16 w-auto"
-            />
+          {/* Logo and Brand */}
+          <div className="flex items-center gap-6">
+            <div className="flex items-center gap-4 py-2 px-2">
+              <img 
+                src="/src/assets/agritrace-logo-new.png" 
+                alt="AgriTrace" 
+                className="h-12 w-auto sm:h-14 md:h-16 flex-shrink-0"
+              />
+              <div className="flex flex-col">
+                <h1 className="text-xl sm:text-2xl font-bold text-primary">
+                  AgriTrace
+                </h1>
+                <p className="text-xs text-muted-foreground hidden sm:block">
+                  Farm to Fork. Secure & Transparent
+                </p>
+              </div>
+            </div>
             <div className="flex items-center gap-2 text-sm">
               <Shield className="h-4 w-4 text-success" />
-              <span className="text-success font-medium">Blockchain Connected</span>
+              <span className="text-success font-medium hidden sm:inline">Blockchain Connected</span>
             </div>
           </div>
 
