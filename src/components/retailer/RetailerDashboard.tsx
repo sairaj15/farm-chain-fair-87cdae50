@@ -252,64 +252,80 @@ const RetailerDashboard: React.FC = () => {
           </CardContent>
         </Card>
 
-        {/* Consumer Impact Analytics */}
+        {/* Today's Fair Price Calculator */}
         <Card className="shadow-card">
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
-              <Star className="h-5 w-5 text-warning" />
-              Consumer Impact Analytics
+              <DollarSign className="h-5 w-5 text-success" />
+              Today's Fair Price Calculator
             </CardTitle>
           </CardHeader>
           <CardContent className="space-y-4">
-            <div className="text-center p-4 bg-warning/10 rounded-lg">
-              <div className="text-2xl font-bold text-warning">47</div>
-              <div className="text-sm text-muted-foreground">Farmers supported this month</div>
+            <div className="text-center p-4 bg-success/10 rounded-lg">
+              <div className="text-lg font-medium text-success mb-1">Current Fair Price for Tomatoes</div>
+              <div className="text-3xl font-bold text-success">₹27/kg</div>
+              <div className="text-sm text-muted-foreground">Retailer margin: ₹2/kg (7%)</div>
             </div>
 
             <div className="space-y-3">
-              <div className="flex justify-between items-center">
-                <span className="text-sm">Average farmer income increase:</span>
-                <span className="font-bold text-success">43%</span>
-              </div>
-              <div className="flex justify-between items-center">
-                <span className="text-sm">Customer satisfaction:</span>
-                <span className="font-bold text-success">96%</span>
-              </div>
-              <div className="flex justify-between items-center">
-                <span className="text-sm">QR verification rate:</span>
-                <span className="font-bold text-trust-blue">87%</span>
+              <div className="text-sm font-medium">Price Breakdown:</div>
+              
+              <div className="space-y-2">
+                <div className="flex justify-between items-center p-2 bg-card border rounded">
+                  <span className="text-sm">Minimum Support Price (MSP)</span>
+                  <span className="font-medium">₹20/kg</span>
+                </div>
+                <div className="flex justify-between items-center p-2 bg-card border rounded">
+                  <span className="text-sm">Quality Premium (Grade A)</span>
+                  <span className="font-medium text-success">+₹5/kg</span>
+                </div>
+                <div className="flex justify-between items-center p-2 bg-card border rounded">
+                  <span className="text-sm">Farmer Credit Bonus (765 score)</span>
+                  <span className="font-medium text-success">+₹2/kg</span>
+                </div>
+                <div className="flex justify-between items-center p-2 bg-success/10 border border-success/20 rounded">
+                  <span className="text-sm font-medium">Fair Purchase Price</span>
+                  <span className="font-bold text-success">₹25/kg</span>
+                </div>
+                <div className="flex justify-between items-center p-2 bg-secondary/10 border border-secondary/20 rounded">
+                  <span className="text-sm font-medium">Recommended Retail Price</span>
+                  <span className="font-bold text-secondary">₹27/kg</span>
+                </div>
               </div>
             </div>
 
             <div className="p-3 bg-trust-blue/10 rounded">
-              <div className="font-medium text-trust-blue mb-1">Customer Feedback Highlights:</div>
-              <div className="text-muted-foreground">
-                "Love knowing exactly where my produce comes from and that farmers get fair prices!"
+              <div className="font-medium text-trust-blue mb-1">🔒 Smart Contract Protection:</div>
+              <div className="text-sm text-muted-foreground">
+                Prices automatically enforce fair farmer payments and prevent exploitation
               </div>
             </div>
 
-            <div className="space-y-2">
-              <div className="text-sm font-medium">This Month's Impact:</div>
-              <div className="grid grid-cols-2 gap-3 text-sm">
-                <div className="p-2 bg-success/10 rounded text-center">
-                  <div className="font-bold text-success">₹1.2M</div>
-                  <div className="text-muted-foreground">Direct to farmers</div>
-                </div>
-                <div className="p-2 bg-secondary/10 rounded text-center">
-                  <div className="font-bold text-secondary">1,847</div>
-                  <div className="text-muted-foreground">QR scans</div>
-                </div>
+            <div className="grid grid-cols-2 gap-3 text-sm">
+              <div className="p-2 bg-warning/10 rounded text-center">
+                <div className="font-bold text-warning">₹5</div>
+                <div className="text-muted-foreground">Extra farmer gets</div>
+              </div>
+              <div className="p-2 bg-success/10 rounded text-center">
+                <div className="font-bold text-success">25%</div>
+                <div className="text-muted-foreground">Above MSP</div>
               </div>
             </div>
 
             <div className="pt-3 border-t">
-              <div className="text-sm font-medium mb-2">Sample Product QR Codes:</div>
-              <div className="flex justify-center">
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-card border-2 border-dashed border-border rounded flex items-center justify-center mb-1">
-                    <QrCode className="h-8 w-8 text-muted-foreground" />
-                  </div>
-                  <div className="text-xs text-muted-foreground">Premium Tomatoes</div>
+              <div className="text-sm font-medium mb-2">Price Comparison:</div>
+              <div className="space-y-2 text-sm">
+                <div className="flex justify-between">
+                  <span className="text-muted-foreground">Traditional middleman price:</span>
+                  <span className="text-destructive">₹18/kg</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-muted-foreground">AgriTrace fair price:</span>
+                  <span className="text-success font-medium">₹25/kg</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-muted-foreground">Farmer benefit:</span>
+                  <span className="text-success font-medium">+₹7/kg (39%)</span>
                 </div>
               </div>
             </div>

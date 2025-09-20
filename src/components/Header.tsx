@@ -28,8 +28,11 @@ const Header: React.FC<HeaderProps> = ({ currentRole, onRoleChange }) => {
           {/* Logo */}
           <div className="flex items-center gap-3">
             <div className="flex items-center gap-2 px-3 py-2 bg-gradient-agri rounded-lg">
-              <Leaf className="h-6 w-6 text-white" />
-              <span className="font-bold text-lg text-white">AgriTrace</span>
+              <img 
+                src="/src/assets/agritrace-logo.png" 
+                alt="AgriTrace" 
+                className="h-8 w-auto"
+              />
             </div>
             <div className="flex items-center gap-2 text-sm">
               <Shield className="h-4 w-4 text-success" />
