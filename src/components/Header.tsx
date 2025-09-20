@@ -27,13 +27,11 @@ const Header: React.FC<HeaderProps> = ({ currentRole, onRoleChange }) => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <div className="flex items-center gap-2 px-3 py-2 bg-gradient-agri rounded-lg">
-              <img 
-                src="/src/assets/agritrace-logo.png" 
-                alt="AgriTrace" 
-                className="h-8 w-auto"
-              />
-            </div>
+            <img 
+              src="/src/assets/agritrace-logo.png" 
+              alt="AgriTrace" 
+              className="h-12 w-auto"
+            />
             <div className="flex items-center gap-2 text-sm">
               <Shield className="h-4 w-4 text-success" />
               <span className="text-success font-medium">Blockchain Connected</span>
